@@ -1,0 +1,121 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>سكربت المدرسة</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 800px;
+        }
+        .style3
+        {
+            width: 213px;
+            height: 64px;
+        }
+    </style>
+</head>
+<body bgcolor="#e8e8e8">
+    <form id="form1" runat="server">
+    <div style="text-align: center">
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr style="font-family: Tahoma">
+                <td align="center">
+                    <table cellspacing="1" class="style2">
+                        <tr>
+                            <td bgcolor="White">
+                                <table cellspacing="1" class="style1">
+                                    <tr>
+                                        <td align="left" bgcolor="#888800">
+                                            <table cellpadding="2">
+                                                <tr>
+                                                    <td>
+                                                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Underline="False" 
+                                                            style="color: #FFFFFF">English</asp:HyperLink>
+                                                    </td>
+                                                    <td>
+                                                        |</td>
+                                                    <td>
+                                                        <asp:HyperLink ID="HyperLink2" runat="server" Font-Underline="False" 
+                                                            style="color: #FFFFFF; font-family: Tahoma">عن المدرسة</asp:HyperLink>
+                                                    </td>
+                                                    <td>
+                                                        |</td>
+                                                    <td>
+                                                        <asp:HyperLink ID="HyperLink3" runat="server" Font-Underline="False" 
+                                                            style="color: #FFFFFF; font-family: Tahoma">اتصل بنا</asp:HyperLink>
+                                                    </td>
+                                                    <td>
+                                                        &nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            <img alt="" class="style3" src="Image/Logo.png" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td>
+                                                        <asp:HyperLink ID="HyperLink4" runat="server" ImageUrl="~/Image/4.jpg" 
+                                                            NavigateUrl="~/Login.aspx">الدخول</asp:HyperLink>
+                                                    </td>
+                                                    <td>
+                                                        <asp:HyperLink ID="HyperLink5" runat="server" ImageUrl="~/Image/3.jpg" 
+                                                            NavigateUrl="~/Teachers.aspx">المعلمين</asp:HyperLink>
+                                                    </td>
+                                                    <td>
+                                                        <asp:HyperLink ID="HyperLink6" runat="server" ImageUrl="~/Image/2.jpg" 
+                                                            NavigateUrl="Category.aspx?AdsNewsSort=1">الإعلانات</asp:HyperLink>
+                                                    </td>
+                                                    <td>
+                                                        <asp:HyperLink ID="HyperLink7" runat="server" ImageUrl="~/Image/1.jpg" 
+                                                            NavigateUrl="Category.aspx?AdsNewsSort=0">الأخبار</asp:HyperLink>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            &nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" bgcolor="#888800">
+                برمجة وتحليل احمد عادل موسى من موقع يازسيس<br />
+                <span class="style2"><a>www.yazsys.com</a><br />
+                </span>وبالتعاون مع موقع عرب ASP.NET<br />
+                <span class="style2"><a>www.arabasp.net</a></span></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
